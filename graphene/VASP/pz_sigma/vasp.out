@@ -1,0 +1,71 @@
+ running on   20 total cores
+ distrk:  each k-point on   20 cores,    1 groups
+ distr:  one band on    1 cores,   20 groups
+ using from now: INCAR     
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Sep 07 2021 20:00:30) complex          
+  
+ POSCAR found type information on POSCAR  C 
+ POSCAR found :  1 types and       2 ions
+ scaLAPACK will be used
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|      For optimal performance we recommend to set                            |
+|        NCORE= 4 - approx SQRT( number of cores)                             |
+|      NCORE specifies how many cores store one orbital (NPAR=cpu/NCORE).     |
+|      This setting can  greatly improve the performance of VASP for DFT.     |
+|      The default,   NCORE=1            might be grossly inefficient         |
+|      on modern multi-core architectures or massively parallel machines.     |
+|      Do your own testing !!!!                                               |
+|      Unfortunately you need to use the default for GW and RPA calculations. |
+|      (for HF NCORE is supported but not extensively tested yet)             |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+ LDA part: xc-table for Ceperly-Alder, standard interpolation
+ found WAVECAR, reading the header
+  number of bands has changed, file:    12 present:    20
+  trying to continue reading WAVECAR, but it might fail
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ reading WAVECAR
+ random initialization beyond band           13
+ the WAVECAR file was read successfully
+ charge-density read from file: unknown                                 
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.201736675752E+02   -0.20174E+02   -0.16936E-10  1080   0.521E-05
+DAV:   2    -0.201736675748E+02    0.40427E-09   -0.12108E-11  1580   0.122E-05
+ *---------------------------------------*
+ *             VASP2WANNIER90            *
+ *---------------------------------------*
+ *         No spin polarization          *
+ *            MMN calculated.            *
+ *          Projection   1 done.         *
+ *          Projection   2 done.         *
+ *          Projection   3 done.         *
+ *          Projection   4 done.         *
+ *          Projection   5 done.         *
+ *            AMN calculated.            *
+ *            EIG written.               *
+ *---------------------------------------*
+MLWF_WANNIER90: WARNING: wannier90.win seems to contains
+a UNIT_CELL_CART block already, I hope it applies to the current setup ...
+
+MLWF_WANNIER90: WARNING: wannier90.win seems to contains
+a ATOMS_CART block already, I hope it applies to the current setup ...
+
+MLWF_WANNIER90: WARNING: wannier90.win seems to contains
+the MP_GRID tag already, I hope it applies to the current setup ...
+
+MLWF_WANNIER90: WARNING: wannier90.win seems to contains
+a KPOINTS block already, I hope it applies to the current setup ...
+
+   1 F= -.20173668E+02 E0= -.20173166E+02  d E =-.100300E-02

@@ -1,0 +1,9 @@
+INCAR created by Atomic Simulation Environment
+ ENCUT = 520.000000
+ SIGMA = 0.100000
+ EDIFF = 1.00e-08
+ PREC = Accurate
+ ICHARG = 2
+ ISMEAR = 0
+ ISTART = 0
+ NCORE = 4
