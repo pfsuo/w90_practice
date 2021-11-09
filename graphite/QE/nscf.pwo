@@ -1,0 +1,203 @@
+
+     Program PWSCF v.6.8 starts on  6Nov2021 at 17:59:47 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on    24 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =      24
+     247030 MiB available memory on the printing compute node when the environment starts
+ 
+     Reading input from nscf.pwi
+Warning: card &IONS ignored
+Warning: card / ignored
+Warning: card &CELL ignored
+Warning: card / ignored
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+
+     Atomic positions and unit cell read from directory:
+     ./tmp/graphite.save/
+     Atomic positions from file used, from input discarded
+ 
+     file C.pz-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  2S 2P renormalized
+
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     one sub-group per band group will be used
+     scalapack distributed-memory algorithm (size of sub-group:  4*  4 procs)
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min          29      15      6                 1717      607     174
+     Max          30      16      7                 1726      617     187
+     Sum         703     361    163                41301    14665    4307
+ 
+     Using Slab Decomposition
+ 
+
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.6252  a.u.
+     unit-cell volume          =     232.8418 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            1
+     number of electrons       =        16.00
+     number of Kohn-Sham states=           16
+     kinetic-energy cutoff     =      60.0000  Ry
+     charge density cutoff     =     480.0000  Ry
+     Exchange-correlation= SLA  PZ   NOGX NOGC
+                           (   1   1   0   0   0   0   0)
+
+     celldm(1)=   4.625184  celldm(2)=   0.000000  celldm(3)=   2.717335
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   2.717335 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350  0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000  0.000000  0.368008 )  
+
+
+     PseudoPot. # 1 for C  read from file:
+     /opt/LDA/C.pz-n-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: 15019a788ed847dd19cec0d3328e849a
+     Pseudo is Projector augmented-wave + core cor, Zval =  4.0
+     Generated using 'atomic' code by A. Dal Corso  v.6.8
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1073 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        C              4.00    12.01100     C ( 1.00)
+
+     No symmetry found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           C   tau(   1) = (   0.0000000   0.0000000   0.0000000  )
+         2           C   tau(   2) = (   0.0000000   0.5773503   0.0000000  )
+         3           C   tau(   3) = (   0.0000000   0.5773503   1.3586676  )
+         4           C   tau(   4) = (   0.5000000   0.2886751   1.3586676  )
+
+     number of k points=   675  Gaussian smearing, width (Ry)=  0.1000
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:    41301 G-vectors     FFT dimensions: (  36,  36,  90)
+
+     Smooth grid:    14665 G-vectors     FFT dimensions: (  24,  24,  64)
+
+     Estimated max dynamical RAM per process >       2.37 MB
+
+     Estimated total dynamical RAM >      56.86 MB
+
+     Check: negative core charge=   -0.000003
+
+     The potential is recalculated from file :
+     ./tmp/graphite.save/charge-density
+
+     Starting wfcs are   16 randomized atomic wfcs
+     Checking if some PAW data can be deallocated... 
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+
+     ethr =  1.00E-13,  avg # of iterations = 56.2
+
+     total cpu time spent up to now is      121.5 secs
+
+     End of band structure calculation
+
+     Number of k-points >= 100: set verbosity='high' to print the bands.
+
+     the Fermi energy is     6.9209 ev
+     (compare with:     6.9209 eV, computed in scf)
+
+     Writing output data file ./tmp/graphite.save/
+ 
+     init_run     :      0.07s CPU      0.11s WALL (       1 calls)
+     electrons    :     90.10s CPU    121.00s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.00s CPU      0.01s WALL (       1 calls)
+     potinit      :      0.01s CPU      0.02s WALL (       1 calls)
+     hinit0       :      0.03s CPU      0.04s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :     90.03s CPU    120.93s WALL (       1 calls)
+     v_of_rho     :      0.00s CPU      0.00s WALL (       1 calls)
+     newd         :      0.00s CPU      0.00s WALL (       1 calls)
+     PAW_pot      :      0.00s CPU      0.01s WALL (       1 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.01s CPU      0.01s WALL (     675 calls)
+     cegterg      :     87.68s CPU    116.63s WALL (    2186 calls)
+
+     Called by *egterg:
+     cdiaghg      :     39.39s CPU     58.28s WALL (   38599 calls)
+     h_psi        :     33.54s CPU     40.82s WALL (   40785 calls)
+     s_psi        :      0.26s CPU      0.32s WALL (   40785 calls)
+     g_psi        :      0.08s CPU      0.10s WALL (   37924 calls)
+
+     Called by h_psi:
+     h_psi:calbec :      1.26s CPU      1.55s WALL (   40785 calls)
+     vloc_psi     :     31.72s CPU     38.58s WALL (   40785 calls)
+     add_vuspsi   :      0.29s CPU      0.37s WALL (   40785 calls)
+
+     General routines
+     calbec       :      1.19s CPU      1.46s WALL (   40785 calls)
+     fft          :      0.01s CPU      0.02s WALL (       6 calls)
+     ffts         :      0.00s CPU      0.00s WALL (       1 calls)
+     fftw         :     30.40s CPU     36.96s WALL (  748962 calls)
+     interpolate  :      0.00s CPU      0.00s WALL (       1 calls)
+     davcio       :      0.02s CPU      1.36s WALL (    1350 calls)
+ 
+     Parallel routines
+ 
+     PWSCF        :   1m31.32s CPU   2m 8.34s WALL
+
+ 
+   This run was terminated on:  18: 1:55   6Nov2021            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

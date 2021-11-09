@@ -1,0 +1,38 @@
+&CONTROL
+   calculation      = 'scf'
+   outdir           = './tmp'
+   prefix           = 'graphite'
+   pseudo_dir       = '/opt/LDA'
+/
+&SYSTEM
+   ibrav            = 4
+   ecutwfc          = 60
+   ecutrho          = 480
+   occupations      = 'smearing'
+   degauss          = 0.1
+   smearing         = 'gauss'
+   ntyp             = 1
+   nat              = 4
+   celldm(1)        = 4.6251839171128974
+   celldm(3)        = 2.717335254050805
+/
+&ELECTRONS
+   conv_thr         = 1e-12
+/
+&IONS
+/
+&CELL
+/
+
+ATOMIC_SPECIES
+C 12.011 C.pz-n-kjpaw_psl.1.0.0.UPF
+
+K_POINTS automatic
+15 15 3  0 0 0
+
+ATOMIC_POSITIONS angstrom
+C 0.0000000000 0.0000000000 0.0000000000 
+C 0.0000000000 1.4130889825 0.0000000000 
+C 0.0000000000 1.4130889825 3.3253959635 
+C 1.2237709567 0.7065444913 3.3253959635 
+
