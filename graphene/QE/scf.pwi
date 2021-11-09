@@ -1,0 +1,37 @@
+&CONTROL
+   calculation      = 'scf'
+   outdir           = './tmp'
+   prefix           = 'graphene'
+   pseudo_dir       = '/opt/LDA'
+/
+&SYSTEM
+   ibrav            = 4
+   ecutwfc          = 60
+   ecutrho          = 480
+   occupations      = 'smearing'
+   degauss          = 0.1
+   smearing         = 'gauss'
+   assume_isolated  = '2D'
+   ntyp             = 1
+   nat              = 2
+   celldm(1)        = 4.624652119457427
+   celldm(3)        = 8.172403393454635
+/
+&ELECTRONS
+   conv_thr         = 1e-12
+/
+&IONS
+/
+&CELL
+/
+
+ATOMIC_SPECIES
+C 12.011 C.pz-n-kjpaw_psl.1.0.0.UPF
+
+K_POINTS automatic
+15 15 1  0 0 0
+
+ATOMIC_POSITIONS angstrom
+C 0.0000000000 0.0000000000 10.0000000000 
+C 1.2236302491 0.7064632537 10.0000000000 
+

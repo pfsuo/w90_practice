@@ -1,0 +1,6 @@
+&BANDS
+  prefix='graphene',
+  outdir='./tmp',
+  filband='bd.dat',
+  lp=.true.
+/
