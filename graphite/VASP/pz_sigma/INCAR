@@ -1,0 +1,12 @@
+INCAR created by Atomic Simulation Environment
+ ENCUT = 520.000000
+ SIGMA = 0.100000
+ EDIFF = 1.00e-08
+ PREC = Accurate
+ ICHARG = 11
+ ISMEAR = 0
+ ISTART = 1
+ LCHARG = F
+ LWAVE = F
+ LWANNIER90 = T
+ NBANDS = 20
